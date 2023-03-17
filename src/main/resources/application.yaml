@@ -1,0 +1,23 @@
+# 端口
+server:
+  port: 8888
+
+# 服务名
+spring:
+  application:
+    name: cannal-client
+
+# 数据库配置
+  datasource:
+      url: jdbc:mysql://localhost:3306/zksc_medical?characterEncoding=UTF-8&useUnicode=true&useSSL=false&serverTimezone=Asia/Shanghai
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+# canal 配置
+canal:
+  client:
+    instances:
+      example:
+        host: 127.0.0.1
+        port: 11111
